@@ -1,5 +1,6 @@
 :root {
     --border-color: rgb(185, 185, 185);
+    --border-table-color: rgb(225, 225, 225);
     --border-radius: 6px;
     --black-color: #333;
     --caption-color: #3B5998;
@@ -97,12 +98,12 @@ main {
 .datatable table {
     table-layout: auto;
     width: 100%;
-    border: 1px solid rgb(225, 225, 225);
+    border: 1px solid var(--border-table-color);
     border-collapse: collapse;
 }
 
 .datatable table tbody td, .datatable table thead th {
-    border: 1px solid rgb(225, 225, 225);
+    border: 1px solid var(--border-table-color);
     padding: 8px 10px;
     text-align: center;
 }
@@ -112,12 +113,12 @@ main {
 }
 
 .caption {
-    background-color: rgb(225, 225, 225);
+    background-color: var(--border-table-color);
     height: 19px;
     line-height: 19px;
     padding: 4px 8px;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
 }
 
 main article .title, .login-form-box .header{
@@ -135,8 +136,8 @@ main article .information {
 }
 
 main article .footer {
-    border: 1px solid rgb(185, 185, 185);
-    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -174,10 +175,10 @@ main article .left {
 }
 
 .login-form-box {
-    border: rgb(185, 185, 185) 1px solid;
+    border: var(--border-color) 1px solid;
     margin: 0 auto;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
     width: 480px;
     box-sizing: border-box;
 }
@@ -189,8 +190,8 @@ main article .left {
 }
 
 .login-form-box .body {
-    border-top: rgb(185, 185, 185) 1px solid;
-    border-bottom: rgb(185, 185, 185) 1px solid;
+    border-top: var(--border-color) 1px solid;
+    border-bottom: var(--border-color) 1px solid;
     padding: 20px 8px 4px;
     box-sizing: border-box;
 }
