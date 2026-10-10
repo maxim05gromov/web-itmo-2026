@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.security.SecureRandom;
 import java.util.Base64;
 
-public class CapthcaFilter extends HttpFilter {
+public class CaptchaFilter extends HttpFilter {
     private static final SecureRandom RANDOM = new SecureRandom();
 
     @Override
